@@ -2,7 +2,6 @@
 
 import Header from "@/components/Header"
 import Hero from "@/components/Hero";
-import Image from "next/image";
 import Industries from "@/components/Industries";
 import Footer from "@/components/Footer";
 
