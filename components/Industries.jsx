@@ -1,4 +1,5 @@
 'use client'
+import { motion } from "framer-motion";
 
 // components
 import IndustryCard from "./IndustryCard";
@@ -38,7 +39,12 @@ export default function Industries() {
     { label: "Gaming", icon: <GamingIcon color="#111827" /> },
   ];
   return (
-    <div className="flex flex-col gap-12">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.0, type: "spring", damping: 20, delay: 1.0 }}
+      className="flex flex-col gap-12"
+    >
       <div className="flex flex-col gap-8 items-center justify-center bg-gray-100 px-6 py-10 rounded-[3rem] border border-gray-200">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-center max-w-[320px]">
           Project briefs for 13 different industries.
@@ -53,6 +59,6 @@ export default function Industries() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
