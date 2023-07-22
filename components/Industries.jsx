@@ -50,7 +50,7 @@ export default function Industries() {
           Project briefs for 13 different industries.
         </h3>
       </div>
-      <div class="flex p-6 justify-between items-center content-center gap-y-3 self-stretch flex-wrap max-w-[816px] bg-white border border-gray-200 rounded-[3rem]">
+      <div class="flex p-6 justify-between items-center content-center gap-y-3 self-stretch flex-col sm:flex-wrap max-w-[816px] bg-white border border-gray-200 rounded-[3rem]">
         {industries.map((industry, index) => (
           <IndustryCard
             key={index}
