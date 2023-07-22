@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Industries from "@/components/Industries";
 import Footer from "@/components/Footer";
 
+export const navigation = hard;
 
 export default function Home() {
   return (
