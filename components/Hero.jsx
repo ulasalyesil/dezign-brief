@@ -1,7 +1,11 @@
-import Image from "next/image"
+'use client'
+
 import { Button } from "./ui/button";
+import Link from "next/link";
+
 
 export default function Hero() {
+
   return (
     <div className="max-w-[512px] flex flex-col items-center gap-4 py-20">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-blue-600 text-center">
@@ -11,7 +15,9 @@ export default function Hero() {
         Work on your design skills with 100 project ideas to build over the
         weekend. Don&apos;t forget to have fun!
       </p>
-      <Button>Give me a brief</Button>
+      <Link href={"/brief"}>
+        <Button>Give me a brief</Button>
+      </Link>
     </div>
   );
 }

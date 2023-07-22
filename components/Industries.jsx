@@ -1,3 +1,5 @@
+'use client'
+
 // components
 import IndustryCard from "./IndustryCard";
 
@@ -37,7 +39,7 @@ export default function Industries() {
   ];
   return (
     <div className="flex flex-col gap-12">
-      <div className="flex flex-col gap-8 items-center justify-center bg-gray-100 px-6 py-10 rounded-3xl border border-gray-200">
+      <div className="flex flex-col gap-8 items-center justify-center bg-gray-100 px-6 py-10 rounded-[3rem] border border-gray-200">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-center max-w-[320px]">
           Project briefs for 13 different industries.
         </h3>

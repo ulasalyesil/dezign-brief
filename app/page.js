@@ -1,26 +1,11 @@
+'use client'
+
 import Header from "@/components/Header"
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import heroBg from "../public/images/heroBg.png";
-import IndustryCard from "@/components/IndustryCard";
 import Industries from "@/components/Industries";
 import Footer from "@/components/Footer";
-
-const industries = [
-  "E-commerce",
-  "Technology",
-  "Health",
-  "Education",
-  "Fashion",
-  "Travel",
-  "Human Resources",
-  "Media",
-  "Finance",
-  "Lifestyle",
-  "Food",
-  "Art",
-  "Gaming"
-];
 
 
 export default function Home() {
