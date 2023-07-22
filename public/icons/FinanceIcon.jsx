@@ -1,4 +1,4 @@
-export default function Finance({ color }) {
+export default function FinanceIcon({ color }) {
   return (
     <svg
       width="25"
