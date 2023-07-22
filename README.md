@@ -6,4 +6,4 @@
 
 You can clone this repo if you'd like. 
 
-This website is created using Next.js and TailwindCSS.
+This website is created using Next.js, shadn/ui components and TailwindCSS.
