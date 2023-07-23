@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import projects from "@/public/data/projects.json";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import { useState, useEffect } from "react";
 
@@ -38,17 +39,22 @@ export default function Page() {
           projectIndustry={selectedProject.industry}
           projectBrief={selectedProject.description}
         />
-        <Button
-          onClick={() => {
-            const randomIndex = Math.floor(
-              Math.random() * projects.projects.length
-            );
-            setSelectedProjectIndex(randomIndex);
-          }}
-          variant="outline"
-        >
-          Give me another one
-        </Button>
+        <div className="flex gap-4 w-full justify-between">
+          <Button
+            onClick={() => {
+              const randomIndex = Math.floor(
+                Math.random() * projects.projects.length
+              );
+              setSelectedProjectIndex(randomIndex);
+            }}
+            variant="outline"
+          >
+            Give me another one
+          </Button>
+          {/* <Link href={""}>
+            <Button>Add to board</Button>
+          </Link> */}
+        </div>
       </motion.div>
       {/* Map each project to a Brief component */}
 
